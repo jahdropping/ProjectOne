@@ -4,14 +4,16 @@
 }
 
 body {
-    background-color: rgb(200, 200, 176);
+    background-color: rgb(117, 126, 113);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 5px solid black; 
+    border: 15px solid rgb(53, 81, 53); 
     padding: 20px;
 }
 
-/* Header */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-bottom: 30px;
     background-color: rgb(53, 81, 53);
@@ -20,7 +22,16 @@ header {
     color: rgb(245, 234, 202);
 }
 
-/* Navigation Bar */
+header h1 {
+    font-size: 60px;
+    margin-right: 20px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -39,31 +50,45 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover {
-    background: rgb(53, 81, 53);
-    color: rgb(245, 234, 202);
-}
-
-/* Main Content */
-.main-content {
+.section {
     max-width: 800px;
     margin: auto;
     text-align: center;
 }
 
-/* Artist Sections */
+h2 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 234, 202);
+}
+
 .artist {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 10px double rgb(245, 234, 202);
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 50px;
 }
 
 .artist img {
     width: 100%;
-    max-width: 500px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 15px;
-    margin-top: 15px;
 }
 
-/* Footer */
+.artist text{
+    flex: 1;
+    font-size: larger;
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
