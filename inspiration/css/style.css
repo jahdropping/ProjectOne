@@ -3,6 +3,77 @@
     padding: 0px;
 }
 
-* {
+body {
     background-color: rgb(200, 200, 176);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 5px solid black; 
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgb(53, 81, 53);
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(245, 234, 202);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(53, 81, 53);
+    background: rgb(245, 234, 202);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgb(53, 81, 53);
+    color: rgb(245, 234, 202);
+}
+
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Artist Sections */
+.artist {
+    margin-bottom: 50px;
+}
+
+.artist img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgb(53, 81, 53);
+    border-radius: 10px;
+}
+
+footer a {
+    color: rgb(245, 234, 202);
+    text-decoration: none;
+    font-weight: bold;
 }
