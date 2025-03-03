@@ -3,6 +3,105 @@
    padding: 0px;
 }
 
-* {
+body {
     background-color: rgb(117, 126, 113);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 15px solid rgb(53, 81, 53); 
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgb(53, 81, 53);
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(245, 234, 202);
+}
+
+header h1 {
+    font-size: 60px;
+    margin-right: 20px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(53, 81, 53);
+    background: rgb(245, 234, 202);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 234, 202);
+}
+
+.bestfive2024 ol,
+.alltime ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: lower-roman;
+    padding: 0;
+}
+
+.bestfive2024 ol li a,
+.alltime ul li a {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.bestfive2024 ol li img,
+.alltime ul li img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.section {
+    max-width: fit-content;
+    margin: auto;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: rgb(53, 81, 53);
+    border-radius: 10px;
+}
+
+footer a {
+    color: rgb(245, 234, 202);
+    text-decoration: none;
+    font-weight: bold;
 }
